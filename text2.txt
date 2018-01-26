@@ -1,0 +1,1 @@
+Это тест на запись и создания текст файла и еще из msg =>This some text from text.txt
