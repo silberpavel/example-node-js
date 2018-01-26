@@ -1,0 +1,23 @@
+{
+  "name": "example-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server3.js",
+  "scripts": {
+    "test": "node ",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silberpavel/example-node-js.git"
+  },
+  "author": "Pavel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silberpavel/example-node-js/issues"
+  },
+  "homepage": "https://github.com/silberpavel/example-node-js#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
