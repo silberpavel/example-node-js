@@ -1,4 +1,5 @@
-var express = require('express')
+var express = require('express');
+var bodyParser = require('body-parser');
 
 // app is server
 var app = express()
@@ -15,11 +16,15 @@ var artists = [
   {
     id: 3,
     name: "Deep Purple",
+  },
+  {
+    id: 4,
+    name: Date.now(),
   }
 ]
  
 app.get('/', function (req, res) {
-  res.send('Hello API');              // send responce
+  res.send('Hello API');              // .SEND responce
 })
 
 app.get('/artists', function (req, res) {
@@ -28,9 +33,10 @@ app.get('/artists', function (req, res) {
 
 app.get('/artists/:id', function (req, res) {
 
-  console.log(req.params);  //name of request after /
+  console.log(req.params);  // log name of request after /
 
-  var artist = artists.find(function(artist) {    // in order to find element in array
+  // in order to find element in array
+  var artist = artists.find(function(artist) {    
     return artist.id === Number(req.params.id)
   });
   res.send(artist);              
