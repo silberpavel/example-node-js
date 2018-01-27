@@ -1,7 +1,7 @@
 {
   "name": "example-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js",
   "main": "server3.js",
   "scripts": {
     "test": "node ",
@@ -21,3 +21,5 @@
     "express": "^4.16.2"
   }
 }
+
+
