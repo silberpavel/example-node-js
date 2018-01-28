@@ -1,4 +1,8 @@
+
+var path = require('path');
 var express = require('express');
+var filename = path.normalize('/Users//Refsnes//\demo_path.js');
+
 
 var app = express()
 
@@ -20,12 +24,12 @@ app.get('/news/:id', function (req, res) {
   var obj = {
     title: "Last News", 
     id: 5,
-    paragraphs: ['Simple', 'Regular text', 'Numbers', 88, 11]
+    paragraphs: ['Simple', 'Regular text', 'Numbers', 88, 11],
+    myPathFileName: filename
   };
-  res.render('news', { newsId: req.params.id, newParam: 8811, myObj: obj});   // lesson #14 Gosha
+  res.render('news', { newsId: req.params.id, newParam: 8811, myObj: obj});   
+  // lesson #14 Gosha
 });
-
-
 
 app.listen(3083);
 console.log('API app started! on port 3083');

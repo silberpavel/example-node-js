@@ -22,16 +22,29 @@
         <h3><%= myObj.id %></h3>
         <h3>myObj.paragraphs[2] = <%= myObj.paragraphs[2] %></h3>
 
+        <h2>myPathFileName = <%= myObj.myPathFileName %></h2>
+
         <ul>
             <p>forEach for items in List from array</p>
                 <% myObj.paragraphs.forEach(function(item) { %>
                     <li> <%= item %> </li>
                 <% }); %>
         </ul>
+
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, tity!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+
     </div>
 
     <style>
-        body {background: #6766669e;}
+        body {background: #6766666e;}
     </style>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
