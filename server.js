@@ -4,12 +4,16 @@ var app = express()
 
 app.set('view engine', 'ejs');
 
+app.use('/link', express.static('public'));
+
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + "/index.html");              
+  // res.sendFile(__dirname + "/index.html");              
+  res.render('index');     
 });
 
 app.get('/about', function (req, res) {
-  res.sendFile(__dirname + "/about.html");       
+  // res.sendFile(__dirname + "/about.html");  
+  res.render('about');     
 });
 
 app.get('/news/:id', function (req, res) {
